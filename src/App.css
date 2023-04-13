@@ -1,7 +1,7 @@
 div#app{
   display: grid;
   min-height: 150vh;
-  max-width: 65vw;
+  max-width: 70vw;
   grid-template-columns: 70% 30%;
   grid-template-rows: 10% 10% 80%;
   grid-template-areas: "name name"
@@ -60,7 +60,64 @@ div#proyects{
 div#education{
   display: grid;
   grid-area: education;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 10% 10% 70%;
+  grid-template-areas: "college-header"
+                        "college"
+                        "certifications-header"
+                        "certifications";
+  border: solid 1px purple;
+}
+
+div#college-header{
+  display: grid;
+  grid-area: college-header;
   align-items: baseline;
   justify-items: left;
-  border: solid 1px purple;
+}
+
+div#college{
+  display: grid;
+  grid-area: college;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "mdc degree";
+  column-gap: 10px;
+}
+
+div#mdc{
+  display: grid;
+  grid-area: mdc;
+  align-items: center;
+}
+
+span.minimal-info{
+  font-size: small;
+  align-self: baseline;
+}
+
+span.degree{
+  font-size: small;
+}
+
+div#degree{
+  display: grid;
+  grid-area: degree;
+  justify-items: left;
+}
+
+div#certifications-header{
+  display: grid;
+  grid-area: certifications-header;
+  align-items: baseline;
+  justify-items: left;
+}
+
+div#certifications{
+  display: grid;
+  grid-area: certifications;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: repeat(5, 20%);
+  align-items: baseline;
+  justify-items: left;
 }
