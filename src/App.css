@@ -1,0 +1,66 @@
+div#app{
+  display: grid;
+  min-height: 150vh;
+  max-width: 65vw;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 10% 10% 80%;
+  grid-template-areas: "name name"
+                        "links links"
+                        "proyects education";
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div#name{
+  display: grid;
+  grid-area: name;
+  align-items:center;
+  justify-items: left;
+  row-gap: 0%;
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+span#location{
+  font-size: small;
+}
+
+div#links{
+  display: grid;
+  grid-area: links;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, 50%);
+  justify-content: center;
+  align-content: baseline;
+}
+
+a.social{
+  color: rgb(8, 123, 218);
+  outline: none;
+  text-decoration: none;
+}
+
+a.social:active{
+  color: rgb(0,123,218);
+}
+
+div.social-link{
+  display: grid;
+  grid-template-columns: 5% 50%;
+  justify-items: left;
+}
+
+div#proyects{
+  display: grid;
+  grid-area: proyects;
+  align-items: baseline;
+  justify-items: left;
+  border: solid 1px black;
+}
+
+div#education{
+  display: grid;
+  grid-area: education;
+  align-items: baseline;
+  justify-items: left;
+  border: solid 1px purple;
+}
