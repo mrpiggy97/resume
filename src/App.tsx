@@ -42,15 +42,18 @@ function App()  {
         <div id="college-header">
           <h2>Education</h2>
         </div>
+
         <div id="college">
           <div id="mdc">
             <img width="100%" height="45%" src='../mdc.jpeg'/>
           </div>
+
           <div id="degree">
             <h4>Miami Dade College</h4>
             <span className='degree'>Associates of Arts, Computer Science</span>
-            <span className='minimal-info'>may 2018-present</span>
+            <span className='degree'>may 2018-present</span>
           </div>
+
         </div>
       </div>
 

@@ -82,18 +82,13 @@ div#college{
   grid-template-columns: 10% 90%;
   grid-template-rows: 100%;
   grid-template-areas: "mdc degree";
-  column-gap: 10px;
+  column-gap: 2px;
 }
 
 div#mdc{
   display: grid;
   grid-area: mdc;
-  align-items: center;
-}
-
-span.minimal-info{
-  font-size: small;
-  align-self: baseline;
+  align-items: baseline;
 }
 
 span.degree{
@@ -103,7 +98,10 @@ span.degree{
 div#degree{
   display: grid;
   grid-area: degree;
+  align-items:center;
   justify-items: left;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: 100%;
 }
 
 div#certifications-header{
