@@ -1,6 +1,7 @@
 div#app{
   display: grid;
-  min-height: 150vh;
+  min-height: 95vh;
+  max-height: 199vh;
   max-width: 70vw;
   grid-template-columns: 70% 30%;
   grid-template-rows: 10% 10% 80%;
@@ -17,7 +18,7 @@ div#name{
   justify-items: left;
   row-gap: 0%;
   grid-template-columns: 100%;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: repeat(5, 20%);
 }
 
 span#location{
@@ -61,11 +62,10 @@ div#education{
   display: grid;
   grid-area: education;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 65% 25%;
+  grid-template-rows: 10% 60% 30%;
   grid-template-areas: "college-header"
                         "college"
                         "skills";
-  border: solid 1px purple;
 }
 
 div#college-header{

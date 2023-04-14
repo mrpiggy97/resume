@@ -1,6 +1,6 @@
 import './App.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub,} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faGolang, faReact, faDocker, faJs } from '@fortawesome/free-brands-svg-icons'
@@ -35,6 +35,7 @@ function App()  {
       <div id="name">
         <h2>Fabian Jesus Rivas</h2>
         <h4>Full Stack Developer</h4>
+        <h5>English-Spanish</h5>
         <span id="location">Cochabamba, Bolivia</span>
       </div>
 
@@ -49,11 +50,11 @@ function App()  {
         </div>
         <div className='social-link'>
           <FontAwesomeIcon icon={faLinkedin} size='1x'/>
-          <a className='social' href='https://www.linkedin.com/in/fabian-jesus-rivas'>linkedin/in/fabian-jesus-rivas</a>
+          <a className='social' href='https://www.linkedin.com/in/fabian-jesus-rivas' target="_blank">linkedin/in/fabian-jesus-rivas</a>
         </div>
         <div className='social-link'>
           <FontAwesomeIcon icon={faGithub} size='1x'/>
-          <a className='social' href='https://www.github.com/mrpiggy97'>github.com/mrpiggy97</a>
+          <a className='social' href='https://www.github.com/mrpiggy97' target='_blank'>github.com/mrpiggy97</a>
         </div>
       </div>
 
@@ -100,7 +101,7 @@ function App()  {
             <FontAwesomeIcon icon={faJs} size='1x'/>
             <span>Javascript</span>
             <FontAwesomeIcon icon={faGolang} size='1x'/>
-            <span>Golang</span>
+            <span>Go</span>
             <FontAwesomeIcon icon={faDocker} size='1x'/>
             <span>Docker</span>
           </div>
