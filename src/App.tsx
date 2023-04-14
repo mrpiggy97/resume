@@ -27,6 +27,32 @@ function Edu(props : EduProps) : JSX.Element{
   )
 }
 
+type ProjectProps = {
+  name : string
+  description : string
+  link : string
+  imageURI : string | null
+}
+
+function Project(props : ProjectProps) : JSX.Element{
+  return(
+    <div className='proyect'>
+      <div className='proyect-name'>
+        <h4>{props.name}</h4>
+      </div>
+      <div className="proyect-link">
+        <a className='social' href={props.link} target="_blank">click here to see {props.name}</a>
+      </div>
+      <div className='proyect-description'>
+        <span>{props.description}</span>
+      </div>
+      <div className='proyect-image'>
+        {props.imageURI ? <img src={props.imageURI} width="100%" height="100%" /> : null}
+      </div>
+    </div>
+  )
+}
+
 function App()  {
 
   return (
@@ -59,7 +85,36 @@ function App()  {
       </div>
 
       <div id="proyects">
-        <span>projects go here</span>
+        <h2>Projects</h2>
+        <Project
+        name="mypathfinder"
+        link="https://boisterous-cocada-9ea93b.netlify.app/"
+        description="mypathfinder was build with React.js, its objective was to
+                    make a project that implements Dijkstra's algorithm with animations
+                    that show you how the graph grows to find the end node.
+                    It was deployed using netlify"
+        imageURI="../mypathfinder.gif"/>
+        <Project
+        name='restClient'
+        link='https://github.com/mrpiggy97/restClient'
+        description='restClient is a chat app built int React that uses WebSockets and
+                    consumes api to connect users'
+        imageURI="../restClient.gif"
+        />
+        <Project
+        name='rest'
+        link='https://github.com/mrpiggy97/rest'
+        description='rest is an api built with go that serves restClient, it receives messages
+                    and then through Websockets it sends them to users'
+        imageURI={null}
+        />
+        <Project
+        name='cqrs'
+        link='https://github.com/mrpiggy97/cqrs'
+        description='cqrs is a proyect that implements cqrs and elastic search
+                    its objective was to build services based on event driven architecture'
+        imageURI={null}
+        />
       </div>
 
       <div id="education">

@@ -53,9 +53,46 @@ div.social-link{
 div#proyects{
   display: grid;
   grid-area: proyects;
+  grid-template-columns: 90%;
+  grid-template-rows: 6% repeat(4, 23%);
+  justify-content: center;
+}
+
+div.proyect{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 15% 70%;
+  grid-template-areas: "proyect-name proyect-image"
+                        "proyect-link proyect-image"
+                        "proyect-description proyect-image";
+  border-top: solid 1px black;
+  padding: 5px;
+}
+
+div.proyect-name{
+  display: grid;
+  grid-area: proyect-name;
+  align-items: center;
+  justify-items: left;
+}
+
+div.proyect-link{
+  display: grid;
+  grid-area: proyect-link;
+  align-items:center;
+  justify-items: left;
+}
+
+div.proyect-description{
+  display: grid;
+  grid-area: proyect-description;
   align-items: baseline;
   justify-items: left;
-  border: solid 1px black;
+}
+
+div.proyect-image{
+  display: grid;
+  grid-area: proyect-image;
 }
 
 div#education{
