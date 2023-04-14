@@ -93,7 +93,7 @@ function App()  {
                     make a project that implements Dijkstra's algorithm with animations
                     that show you how the graph grows to find the end node.
                     It was deployed using netlify"
-        imageURI="../mypathfinder.gif"/>
+        imageURI="../mypathfinder-188.jpg"/>
         <Project
         name='restClient'
         link='https://github.com/mrpiggy97/restClient'
