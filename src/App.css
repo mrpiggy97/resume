@@ -61,11 +61,10 @@ div#education{
   display: grid;
   grid-area: education;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 10% 10% 70%;
+  grid-template-rows: 10% 65% 25%;
   grid-template-areas: "college-header"
                         "college"
-                        "certifications-header"
-                        "certifications";
+                        "skills";
   border: solid 1px purple;
 }
 
@@ -79,43 +78,55 @@ div#college-header{
 div#college{
   display: grid;
   grid-area: college;
-  grid-template-columns: 10% 90%;
-  grid-template-rows: 100%;
-  grid-template-areas: "mdc degree";
-  column-gap: 2px;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 15%);
 }
 
-div#mdc{
+div.edu{
   display: grid;
-  grid-area: mdc;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "logo edu-info";
+  column-gap: 5px;
+}
+
+div.logo{
+  display: grid;
+  grid-area: logo;
   align-items: baseline;
 }
 
-span.degree{
+div.edu-info{
+  display: grid;
+  grid-area: edu-info;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 33%);
+  align-items: center;
+  justify-items: left;
+}
+
+span.minimal-info{
   font-size: small;
 }
 
-div#degree{
+div#skills{
   display: grid;
-  grid-area: degree;
-  align-items:center;
-  justify-items: left;
-  grid-template-rows: repeat(4, 25%);
+  grid-area: skills;
   grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "skills-header"
+                        "skills-list";
 }
 
-div#certifications-header{
+div#skills-header{
   display: grid;
-  grid-area: certifications-header;
-  align-items: baseline;
+  grid-area: skills-header;
+  align-items: flex-start;
   justify-items: left;
 }
 
-div#certifications{
+div#skills-list{
   display: grid;
-  grid-area: certifications;
+  grid-area: skills-list;
   grid-template-columns: 10% 90%;
-  grid-template-rows: repeat(5, 20%);
-  align-items: baseline;
-  justify-items: left;
 }
