@@ -89,29 +89,29 @@ function App()  {
         <Project
         name="mypathfinder"
         link="https://boisterous-cocada-9ea93b.netlify.app/"
-        description="mypathfinder was build with React.js, its objective was to
-                    make a project that implements Dijkstra's algorithm with animations
-                    that show you how the graph grows to find the end node.
-                    It was deployed using netlify"
-        imageURI="../mypathfinder-188.jpg"/>
+        description="mypathfinder was built with React.js and Typescript,
+                    its objective was to make a project that implements Dijkstra's
+                    algorithm with animations that show you how the graph grows to
+                    find the end node. It was deployed using netlify"
+        imageURI="../mypathfinder.gif"/>
         <Project
         name='restClient'
         link='https://github.com/mrpiggy97/restClient'
-        description='restClient is a chat app built int React that uses WebSockets and
-                    consumes api to connect users'
+        description="restClient is a chat app built in React.js and Typescript
+                    that uses WebSockets and rest's proyect api to connect users"
         imageURI="../restClient.gif"
         />
         <Project
         name='rest'
         link='https://github.com/mrpiggy97/rest'
-        description='rest is an api built with go that serves restClient, it receives messages
-                    and then through Websockets it sends them to users'
+        description='rest is an api built with Go that serves restClient proyect,
+                    it receives messages and sends them to users through WebSockets'
         imageURI={null}
         />
         <Project
         name='cqrs'
         link='https://github.com/mrpiggy97/cqrs'
-        description='cqrs is a proyect that implements cqrs and elastic search
+        description='cqrs is a proyect built in Go that implements cqrs and elastic search,
                     its objective was to build services based on event driven architecture'
         imageURI={null}
         />
