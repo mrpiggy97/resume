@@ -12,7 +12,7 @@ type EduProps = {
 }
 
 function Edu(props : EduProps) : JSX.Element{
-  let imageURI : string = props.institution === "Platzi" ? "/src/assets/platzi.jpeg" : "/src/assets/mdc.jpeg"
+  let imageURI : string = props.institution === "Platzi" ? "assets/platzi.jpeg" : "assets/mdc.jpeg"
   return(
     <div className='edu'>
       <div className='logo'>
