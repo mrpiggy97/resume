@@ -93,13 +93,13 @@ function App()  {
                     its objective was to make a project that implements Dijkstra's
                     algorithm with animations that show you how the graph grows to
                     find the end node. It was deployed using netlify"
-        imageURI="assets/mypathfinder.gif"/>
+        imageURI="src/assets/mypathfinder.gif"/>
         <Project
         name='restClient'
         link='https://github.com/mrpiggy97/restClient'
         description="restClient is a chat app built in React.js and Typescript
                     that uses WebSockets and rest's proyect api to connect users"
-        imageURI="assets/restClient.gif"
+        imageURI="/src/assets/restClient.gif"
         />
         <Project
         name='rest'

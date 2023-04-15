@@ -11,7 +11,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
       },
       output: {
-        assetFileNames: 'assets/[name][extname]',
+        assetFileNames: 'src/assets/[name][extname]',
       },
     },
   },
