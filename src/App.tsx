@@ -12,7 +12,7 @@ type EduProps = {
 }
 
 function Edu(props : EduProps) : JSX.Element{
-  let imageURI : string = props.institution === "Platzi" ? "/assets/platzi.jpeg" : "/assets/mdc.jpeg"
+  let imageURI : string = props.institution === "Platzi" ? "/images/platzi.jpeg" : "/images/mdc.jpeg"
   return(
     <div className='edu'>
       <div className='logo'>
@@ -93,13 +93,13 @@ function App()  {
                     its objective was to make a project that implements Dijkstra's
                     algorithm with animations that show you how the graph grows to
                     find the end node. It was deployed using netlify"
-        imageURI="./src/assets/mypathfinder.gif"/>
+        imageURI="/images/mypathfinder.gif"/>
         <Project
         name='restClient'
         link='https://github.com/mrpiggy97/restClient'
         description="restClient is a chat app built in React.js and Typescript
                     that uses WebSockets and rest's proyect api to connect users"
-        imageURI="./src/assets/restClient.gif"
+        imageURI="/images/restClient.gif"
         />
         <Project
         name='rest'
