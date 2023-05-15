@@ -61,7 +61,7 @@ div#proyects{
 div.proyect{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 15% 15% 70%;
+  grid-template-rows: 15% 25% 60%;
   grid-template-areas: "proyect-name proyect-image"
                         "proyect-link proyect-image"
                         "proyect-description proyect-image";
@@ -72,14 +72,14 @@ div.proyect{
 div.proyect-name{
   display: grid;
   grid-area: proyect-name;
-  align-items: center;
+  align-items: baseline;
   justify-items: left;
 }
 
 div.proyect-link{
   display: grid;
   grid-area: proyect-link;
-  align-items:center;
+  align-items: end;
   justify-items: left;
 }
 
@@ -99,10 +99,32 @@ div#education{
   display: grid;
   grid-area: education;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 60% 30%;
-  grid-template-areas: "college-header"
-                        "college"
-                        "skills";
+  grid-template-rows: 30% 10% 60%;
+  grid-template-areas:  "skills"
+                        "college-header"
+                        "college";
+}
+
+div#skills{
+  display: grid;
+  grid-area: skills;
+  grid-template-columns: 100%;
+  grid-template-rows: 30% 70%;
+  grid-template-areas: "skills-header"
+                        "skills-list";
+}
+
+div#skills-header{
+  display: grid;
+  grid-area: skills-header;
+  align-items: flex-start;
+  justify-items: left;
+}
+
+div#skills-list{
+  display: grid;
+  grid-area: skills-list;
+  grid-template-columns: 10% 90%;
 }
 
 div#college-header{
@@ -144,26 +166,4 @@ div.edu-info{
 
 span.minimal-info{
   font-size: small;
-}
-
-div#skills{
-  display: grid;
-  grid-area: skills;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 70%;
-  grid-template-areas: "skills-header"
-                        "skills-list";
-}
-
-div#skills-header{
-  display: grid;
-  grid-area: skills-header;
-  align-items: flex-start;
-  justify-items: left;
-}
-
-div#skills-list{
-  display: grid;
-  grid-area: skills-list;
-  grid-template-columns: 10% 90%;
 }
