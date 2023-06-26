@@ -141,7 +141,7 @@ function App()  {
         <h2>Fabian Jesus Rivas</h2>
         <h4>Full Stack Developer</h4>
         <h5>English-Spanish</h5>
-        <span id="location">Cochabamba, Bolivia</span>
+        <span id="location">Miami, Florida</span>
       </div>
 
       <div id="links">
