@@ -151,7 +151,7 @@ function App()  {
         </div>
         <div className='social-link'>
           <FontAwesomeIcon icon={faPhone} size='1x'/>
-          <span>+(591)75952622</span>
+          <span>7866603157</span>
         </div>
         <div className='social-link'>
           <FontAwesomeIcon icon={faLinkedin} size='1x'/>
