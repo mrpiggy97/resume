@@ -32,7 +32,6 @@ type FrontendProps = {
   description : string
   link : string
   githubUrl : string
-  imageURI : string
 }
 
 function Frontend(props : FrontendProps) : JSX.Element{
@@ -47,9 +46,6 @@ function Frontend(props : FrontendProps) : JSX.Element{
       </div>
       <div className='proyect-description'>
         <span>{props.description}</span>
-      </div>
-      <div className='proyect-image'>
-        <img src={props.imageURI} width="100%" height="100%" />
       </div>
     </div>
   )
@@ -113,9 +109,6 @@ function MicroServices(props : MicroServicesProps) : JSX.Element{
       <div className='proyect-description'>
         <span>{props.description}</span>
       </div>
-      <div className='proyect-image'>
-        {imageUrl ? <img src={imageUrl} width="100%" height="100%" /> : null}
-      </div>
     </div>
   )
 }
@@ -172,15 +165,13 @@ function App()  {
                     its objective was to make a project that implements Dijkstra's
                     algorithm with animations that show you how the graph grows to
                     find the end node. It was deployed using netlify"
-        githubUrl='https://www.github.com/mrpiggy97/mypathfinder'
-        imageURI="/images/mypathfinder.gif"/>
+        githubUrl='https://www.github.com/mrpiggy97/mypathfinder'/>
         <Frontend
         name='space simulation'
         link='https://zingy-hotteok-ae1f96.netlify.app/'
         description="a 3d simulation of the solar sisytem, it was built using
                     React.js, Typescript and Three.js"
         githubUrl='https://www.github.com/mrpiggy97/space-simulation'
-        imageURI="/images/space-simulation.gif"
         />
         <MicroServices
         name='rest'
@@ -208,6 +199,8 @@ function App()  {
             <span>React</span>
             <span>Ts</span>
             <span>Typescript</span>
+            <span>S</span>
+            <span>Solid.js</span>
             <FontAwesomeIcon icon={faJs} size='1x'/>
             <span>Javascript</span>
             <FontAwesomeIcon icon={faGolang} size='1x'/>
@@ -225,21 +218,6 @@ function App()  {
           <Edu institution='Miami Dade College'
           name='Associates in Arts, Computer Science'
           extraInfo='2018-present' />
-          <Edu institution='Platzi'
-          name='Algorithmic Complexity with Javascript'
-          extraInfo="2022"/>
-          <Edu institution='Platzi'
-          name='Data Structures with Javascript'
-          extraInfo='2022'/>
-          <Edu institution='Platzi'
-          name="Go Advanced: Event Driven Architecture and CQRS"
-          extraInfo="2022"/>
-          <Edu institution='Platzi'
-          name='Go Advanced: Concurrency and Design Patterns'
-          extraInfo='2022'/>
-          <Edu institution='Platzi'
-          name='Go Advanced: Rest and Websockets'
-          extraInfo='2022'/>
         </div>
       </div>
     </div>
